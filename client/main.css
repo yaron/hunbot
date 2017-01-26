@@ -1,0 +1,17 @@
+.matching-text {
+    display: block;
+    float: left;
+    width: 20%;
+}
+
+.response-text {
+    display: block;
+    float: left;
+    width: 20%;
+}
+
+.rule-item {
+    display: block;
+    float: left;
+    width: 100%;
+}
