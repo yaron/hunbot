@@ -21,7 +21,7 @@ console.log(req.body);
       });
     }
 
-    const responses = Rules.find({text: req.body.message}).fetch();
+    const responses = Rules.find({$text: {$search: '"' + req.body.message + '"'}}).fetch();
     responses.forEach(function(response) {
       reply.push(response.response);
     })
